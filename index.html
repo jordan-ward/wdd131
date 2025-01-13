@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jordan Ward</title>
+    <meta name="description" content="Home page for WDD 131 class for Jordan Ward.">
+    <meta name="author" content="Jordan Ward">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Jordan Ward</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-cor/3?lang=eng&id=p6#p6">Scripture</a></li>
+            <li><a href="final.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <p class="about-para">Hello! My name is Jordan. I grew up in California where I lived on an avocado orchard. I then moved up to Idaho where I live now. I am currently working with the Idaho transportation department where I do building maintenance. I have my wife, one child and a dog. We love to be outside and enjoy spending time together!</p>
+            <img src="images\profile.jpg" class="profile" width="250">
+            <h3>Idaho</h3>
+            <img src="images\idaho.webp" alt="Idaho Image" class="idaho" width="250">
+            <p class="idaho-para">Idaho is probably most known for its potatoes. Idaho even has its own potato museum. This state is atually the size of Texas if all of the mountains were to be flattened out. Idaho's state gem is the star garnet and its nickname is actually called the gem state because of it. More than 40% of Idaho is covered by trees!</p>
+        </section>      
+        <section class="card">
+            <h2 class="web">Web Dev Resources</h2>
+            <nav>
+                <ul class="resources">
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://codepen.io/">CodePen</a></li>
+                    <li><a href="https://squoosh.app/">Squoosh</a></li>
+                    <li><a href="https://coolors.co/">Coolors</a></li>
+                    <li><a href="https://htmlcolorcodes.com/color-picker/">HtmlColorCodes</a></li>
+                    <li><a href="https://fonts.google.com/">GoogleFonts</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p class="copywrite">
+            <!-- Current year will be populated by Javascript -->
+            ©️<span id="currentyear"></span> | Jordan Ward | Idaho 
+        </p>
+        <p class="modify">
+            <!-- Will be populated by Javascript -->
+            Last Modified: <span id="lastmodified"></span> 
+        </p>
+    </footer>   
+</body>
+</html>

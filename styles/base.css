@@ -1,0 +1,146 @@
+/* header and footer color #8B9D83 */
+/* nav color #3A4E48 */
+/* body background #F7F0F5 */
+/* hover color #BCE784 */
+/* h's color #6A7B76 */
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+body {
+    font-family: "Roboto", serif;
+    background-color: #F7F0F5;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    font-weight: 400;
+    background-color: #8B9D83;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.menu {
+    background-color: #3A4E48;
+    margin: 0 auto;
+    max-width: auto;
+    max-height: 200px;
+    grid-column: 1/4;
+    padding: 5px;
+}
+
+.menu a:hover {
+    border: 1px solid #BCE784;
+    padding: 12px
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul {
+    flex: 1 1 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    font-weight: 200;
+    color: white;
+    font-size: 30px;
+}
+
+main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 5px;
+    padding: 0.5rem;
+    margin: 5px;
+}
+
+.card {
+    border: black 1px solid;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 200;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+
+h2 {
+    background-color: #6A7B76;
+    font-weight: 300;
+    color: white;
+    font-size: 50px;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 50px;
+    text-decoration: underline;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-para {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.profile {
+    grid-column: 3/4;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.idaho {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.idaho-para {
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+.web {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+footer {
+    display: flex;
+    padding: 2rem;
+    font-weight: 400;
+    background-color: #8B9D83;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+}
