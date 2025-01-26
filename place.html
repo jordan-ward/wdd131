@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WDD 131 Place Assignment - Jordan Ward</title>
+    <meta name="description" content="Place assignment page for WDD 131.">
+    <meta name="author" content="Jordan Ward">
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+<body>
+    <header>
+        <h1>Idaho, USA</h1>
+    </header>
+    <picture class="hero">
+        <source srcset="images/hero-image-large.webp" media="min-width: 650px">
+        <img class="truck" src="images/hero-image-mobile.webp" alt="Large Idaho potato on a truck">
+    </picture>
+    <section class="data">
+        <h2>Data</h2>
+        <h3>Area: </h3>
+        <p>83,642 Square Miles</p>
+        <h3>Population: </h3>
+        <p>1.965 Million people</p>
+        <h3>Capital: </h3>
+        <p>Boise</p>
+        <h3>Languages: </h3>
+        <p>English</p>
+        <h3>Currency: </h3>
+        <p>USD (United States Dollar)</p>
+        <h3>Time Zone: </h3>
+        <p>MST (Mountain Standard Time)</p>
+        <h3>Calling Code: </h3>
+        <p>208, 986</p>
+    </section>
+    <section class="weather">
+        <h2>Weather</h2>
+        <picture class="sun">
+            <source srcset="images/weather-large.webp" media="min-width: 650px">
+            <img src="images/weather-mobile.svg" alt="Weather image" width="200px">
+        </picture>
+        <h3>Temperature: </h3>
+        <p class="temperature">
+            37°F
+        </p>
+        <h3>Conditions: </h3>
+        <p>
+            Sunny
+        </p>
+        <h3>Wind: </h3>
+        <p class="wind">
+            10 MPH
+        </p>
+        <h3>Wind Chill: </h3>
+        <p class="windchill">
+            <!-- Wind chill will be calculated in Javascript -->
+            <span id="windchill"></span>°F
+        </p>
+    </section>
+    <footer>
+        <p class="copywrite">
+            <!-- Current year will be populated by Javascript -->
+            ©️<span id="currentyear"></span> | Jordan Ward | Idaho 
+        </p>
+        <p class="modify">
+            <!-- Will be populated by Javascript -->
+            Last Modified: <span id="lastmodified"></span> 
+        </p>
+    </footer>  
+</body>
+</html>

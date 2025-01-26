@@ -1,0 +1,68 @@
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+body {
+    font-family: "Roboto", serif;
+    background-color: #F2FDFF;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    font-weight: 400;
+    background-color: #D00000;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.truck {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    align-self: center;
+    justify-self: center;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: underline;
+    padding: 2rem;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+footer {
+    display: flex;
+    padding: 2rem;
+    font-weight: 400;
+    background-color: #256EFF;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+}
