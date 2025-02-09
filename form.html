@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Review Form</title>
+    <meta name="description" content="Form">
+    <meta name="author" content="Jordan Ward">
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+</head>
+<body>
+    <h1>Product Review</h1>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+            <!-- Product Name -->
+                <div class="product">Product Name</div>
+                    <label>
+                        <select id="product" name="product" required></select>
+                    </label>
+                
+            <!-- Overall Rating -->
+                <div class="stars">Overall Rating</div>
+                    <label>
+                        <input type="radio" id="onestar" name="stars" value="1" required> &star;
+                    </label>
+                    <label>
+                        <input type="radio" id="twostar" name="stars" value="2" required> &star; &star;
+                    </label>
+                    <label>
+                        <input type="radio" id="threestar" name="stars" value="3" required> &star; &star; &star;
+                    </label>
+                    <label>
+                        <input type="radio" id="fourstar" name="stars" value="4" required> &star; &star; &star; &star;
+                    </label>
+                    <label>
+                        <input type="radio" id="fivestar" name="stars" value="5" required> &star; &star; &star; &star; &star;
+                    </label>
+                
+            <!-- Date Of Installation -->
+                <div class="date">Date of Installation</div>
+                    <label>
+                        <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" required>
+                    </label>
+
+            <!-- Useful Features -->
+                    <div class="features">Which features did you find useful in the product?</div>
+                    <p>(Check all that apply)</p>                       
+                        <label>
+                            <input type="checkbox" id="durability" name="durability" value="yes"> Durability
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use
+                        </label>
+                        <label>
+                            <input type="checkbox" id="performance" name="performance" value="yes"> Performance
+                        </label>
+                        <label>
+                            <input type="checkbox" id="design" name="design" value="yes"> Design
+                        </label>
+
+            <!-- Written Review -->
+                    <div class="written">Written Review</div>
+                    <p>(Optional)</p>
+                        <label>
+                            <textarea id="review" name="review" rows="5" cols="50"></textarea>
+                        </label>
+
+            <!-- Your Name -->
+                    <div class="name">Your Name</div>
+                    <p>(Optional)</p>
+                        <label>
+                            <textarea id="name" name="name" rows="1" cols="50"></textarea>
+                        </label>
+
+            </fieldset>
+
+            <input type="submit" value="Review This Product">
+        </form>
+
+    <footer>
+        <p class="copywrite">
+            <!-- Current year will be populated by Javascript -->
+            ©️<span id="currentyear"></span> | Jordan Ward | Idaho 
+        </p>
+        <p class="modify">
+            <!-- Will be populated by Javascript -->
+            Last Modified: <span id="lastmodified"></span> 
+        </p>
+    </footer>
+</body>
+</html>
