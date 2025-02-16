@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Learn More Page</title>
+    <meta name="description" content="Learn more">
+    <meta name="author" content="Jordan Ward">
+    <script src="scripts/hobby.js" defer></script>
+    <link rel="stylesheet" href="styles/hobby.css">
+    <link rel="stylesheet" href="styles/hobby-large.css">
+</head>
+<body>
+    <header>
+        <h1>Learn More</h1>       
+    </header>
+    <nav class="links">
+        <ul>
+            <li><a href="contact.html">Learn More</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guide.html">Guide</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="learn">Would you like to learn more?</h2>
+        <form method="get" action="learn.html" class="wf1">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>Email <input type="email" name="email" placeholder="you@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Interest</legend>
+                <div>Which aspect appeals to you?</div>
+                <label><input type="radio" name="aspect" value="Building">Building</label>
+                <label><input type="radio" name="aspect" value="Painting">Painting</label>
+                <label><input type="radio" name="aspect" value="Battles">Battles</label>
+                <label><input type="radio" name="aspect" value="Collecting">Collecting</label>
+
+                <legend>What Faction are you interested in?</legend>
+                <div>Space Marines:</div>
+                <label><input type="checkbox" name="ultra" value="yes">Ultra Marines</label>
+                <label><input type="checkbox" name="templars" value="yes">Black Templars</label>
+                <label><input type="checkbox" name="angels" value="yes">Blood Angels</label>
+                <label><input type="checkbox" name="dark" value="yes">Dark Angels</label>
+                <label><input type="checkbox" name="watch" value="yes">Deathwatch</label>
+                <div>Armies of the Imperium:</div>
+                <label><input type="checkbox" name="sororitas" value="yes">Adepta Sororitas</label>
+                <label><input type="checkbox" name="custodes" value="yes">Adeptus Custodes</label>
+                <label><input type="checkbox" name="mechanicus" value="yes">Adeptus Mechanicus</label>
+                <label><input type="checkbox" name="militarum" value="yes">Astra Militarum</label>
+                <div>Forces of Chaos:</div>
+                <label><input type="checkbox" name="space" value="yes">Chaos Space Marines</label>
+                <label><input type="checkbox" name="guard" value="yes">Death Guard</label>
+                <label><input type="checkbox" name="sons" value="yes">Thousand Sons</label>
+                <label><input type="checkbox" name="world" value="yes">World Eaters</label>
+                <label><input type="checkbox" name="chaos" value="yes">Chaos Daemons</label>
+                <div>The Xenos Threat:</div>
+                <label><input type="checkbox" name="aeldari" value="yes">Aeldari</label>
+                <label><input type="checkbox" name="drukhari" value="yes">Drukhari</label>
+                <label><input type="checkbox" name="tyranids" value="yes">Tyranids</label>
+                <label><input type="checkbox" name="genestealer" value="yes">Genestealer Cults</label>
+                <label><input type="checkbox" name="votann" value="yes">Leagues of Votann</label>
+                <label><input type="checkbox" name="necrons" value="yes">Necrons</label>
+                <label><input type="checkbox" name="orks" value="yes">Orks</label>
+                <label><input type="checkbox" name="tau" value="yes">T'au Empire</label>
+            </fieldset>
+            
+            <input type="submit" value="Learn More">
+        </form>
+    <img class="list" src="images/factions.webp" alt="Factions" loading="lazy">
+
+    <section class="armyFactions">
+        <h3>Factions</h3>
+        <nav id="menu">
+            <ul class="navigation">
+                <li><a href="#" id="all">All</a></li>
+                <li><a href="#" id="marines">Space Marines</a></li>
+                <li><a href="#" id="imperium">Armies of the Imperium</a></li>
+                <li><a href="#" id="chaos">Forces of Chaos</a></li>
+                <li><a href="#" id="xenos">The Xenos Threat</a></li>
+            </ul>
+        </nav>
+        <div class="res-grid"></div>
+    </section>
+
+    </main>
+    <footer>
+        <p class="copywrite">
+            <!-- Current year will be populated by Javascript -->
+            ©️<span id="currentyear"></span> | Jordan Ward | Idaho 
+        </p>
+        <p class="modify">
+            <!-- Will be populated by Javascript -->
+            Last Modified: <span id="lastmodified"></span> 
+        </p>
+    </footer>
+</body>
+</html>

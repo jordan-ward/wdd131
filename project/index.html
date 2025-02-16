@@ -3,17 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Typography Used -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Home Page</title>
-    <meta name="description" content="Home">
+    <!-- This will be used all throughout with changes to weight and size where approptiate. -->
+
+    <!-- Site Name -->
+    <title>Jordan's New Hobby</title>
+    <!-- I chose this title because it is a hobby that I am new at and this page gives an introduction to why I enjoy it. -->
+
+    <!-- Site Purpose -->
+    <meta name="description" content="Home Page">
     <meta name="author" content="Jordan Ward">
+    <!-- The purpose of this site is to give an overview of this hobby and why I like it. It also is the home page to link to other pages of me displaying parts of the hobby and a form page for feedback. -->
+    
+    <!-- Scenarios -->
+    <!-- What do you do with this hobby? -->
+    <!-- How do you get started in this hobby? -->
+    <!-- Why would you want to do this? -->
+
+    <!-- Colors -->
+    <!-- Indigo Dye #08415C rgb(8, 65, 92) - used for a background for the nav area and paragraphs on the page with opacity -->
+    <!-- Tea Green #DCF2B0 rgb(220, 242, 176) - used for highlighting and hovering selections -->
+    <!-- Taupe Gray #949396 rgb(148, 147, 150) - used for the header and footer background -->
+
     <script src="scripts/hobby.js" defer></script>
     <link rel="stylesheet" href="styles/hobby.css">
     <link rel="stylesheet" href="styles/hobby-large.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Jordan's Warhammer Hobby</h1>       
+    </header>
+    <nav class="links">
+        <ul>
+            <li><a href="contact.html">Learn More</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guide.html">Guide</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="about">
+            <h2>About Warhammer</h2>
+            <p>
+                Warhammer 40,000 is an entertaining hobby that revolves around building miniatures, painting those miniatures, and then playing with them in a wargame scenario with another person. You start off by choosing a faction that interests you then get to building. Each model is assigned points and once your army reaches the desired amount of points, generally 2,000, you are able to go against another person with their own army. The hobby includes a spot for everyone. If you enjoy learning the lore of this fantasy universe, there are many books, animations, and videos out there about it. My personal favorite part of the hobby is the building. I enjoy seeing these highly detailed miniatures come to life! 
+            </p>
+        </section>
+        <section class="homeImg">
+            <figure class="tableTop">
+                <img src="images/warhammerTabletop.webp" alt="Warhammer Tabletop">
+                <figcaption>Overhead view of the start of a game of Warhammer</figcaption>
+            </figure>
+        </section>
+        
+
+        <!-- These will not be on the final project -->
+        <!-- <h3 class="wireframes">Wireframes</h3>
+        <figure class="desktop">
+            <img src="images/home-desktop.png" alt="Desktop Wireframe">
+            <figcaption>Desktop Wireframe</figcaption>
+        </figure>
+        <figure class="mobile">
+            <img src="images/home-mobile.png" alt="Mobile Wireframe">
+            <figcaption>Mobile Wireframe</figcaption>
+        </figure> -->
+
+    </main>
+    <footer>
+        <p class="copywrite">
+            <!-- Current year will be populated by Javascript -->
+            ©️<span id="currentyear"></span> | Jordan Ward | Idaho 
+        </p>
+        <p class="modify">
+            <!-- Will be populated by Javascript -->
+            Last Modified: <span id="lastmodified"></span> 
+        </p>
+    </footer>
 </body>
 </html>
